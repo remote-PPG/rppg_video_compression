@@ -1,0 +1,3 @@
+[submodule "rppg_toolbox"]
+	path = rppg_toolbox
+	url = https://github.com/remote-PPG/rppg_toolbox.git

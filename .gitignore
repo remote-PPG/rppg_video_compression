@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+config/*.yaml
+!config/config.yaml
+
+cache/**
+out/**
+# Virtual Environment
+venv/
+venv2/
+.env
