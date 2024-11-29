@@ -35,3 +35,9 @@ pip install -r requirements.txt
 ```
 git submodule update --remote
 ```
+
+### 模型训练, 会在当前目录```./out/```下保存模型
+```
+# 修改PhysNet_Train.py 数据集目录等配置，并执行
+python PhysNet_Train.py
+```
