@@ -34,6 +34,10 @@ pip install -r requirements.txt
 ### 更新子项目 *rppg_toolbox*
 ```
 git submodule update --remote
+
+# or
+cd rppg_toolbox
+git pull
 ```
 
 ### 模型训练, 会在当前目录```./out/```下保存模型
