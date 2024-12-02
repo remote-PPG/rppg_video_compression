@@ -5,8 +5,8 @@ from rppg_toolbox.src.data_generator.PhysNet import PhysNetDataGenerator,PhysNet
 from rppg_toolbox.src.common.cache import CacheType
 from rppg_toolbox.src.stepbystep.v4 import StepByStep
 from torch import optim
-from rppg_toolbox.src.model.PhysNet import PhysNet
-from rppg_toolbox.src.loss.Physnet import Neg_Pearson
+from rppg_toolbox.src.model import PhysNet
+from rppg_toolbox.src.loss import Neg_PearsonLoss
 
 MODEL_SAVE_PATH = r"./out/model/PhysNet_Train_in_UBFC-rPPG.mdl"
 TRAIN_CACHE = CacheType.NEW_CACHE
@@ -26,7 +26,7 @@ dataset = 2
 
 
 model = PhysNet(T)
-loss = Neg_Pearson()
+loss = Neg_PearsonLoss()
 optimizer = optim.Adam(model.parameters(),lr=0.0001)
 sbs_physnet = StepByStep(model,loss,optimizer)
 
